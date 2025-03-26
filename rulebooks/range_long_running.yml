@@ -7,6 +7,22 @@
         delay: 1
   rules:
     - name: Say Hello long running
+      condition: >
+        event.i == 5
+        or event.i == 10
+        or event.i == 15
+        or event.i == 20
+        or event.i == 25
+        or event.i == 30
+        or event.i == 35
+        or event.i == 40
+        or event.i == 45
+        or event.i == 50
+        or event.i == 55
+        or event.i == 60
+        or event.i == 65
+        or event.i == 70
+        or event.i == 75
       action:
         debug:
           msg: 'Hello World!, event.i = {{ event.i }}'
