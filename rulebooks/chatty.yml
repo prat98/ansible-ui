@@ -1,5 +1,5 @@
 ---
-- name: Long Running Range
+- name: Chatty
   hosts: all
   sources:
     - ansible.eda.range:
