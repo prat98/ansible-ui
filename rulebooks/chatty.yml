@@ -3,7 +3,7 @@
   hosts: all
   sources:
     - ansible.eda.range:
-        limit: 120 # 30 days
+        limit: 240 # 30 days
         delay: 1
   rules:
     - name: Say Hello long running
@@ -11,4 +11,4 @@
         event.i > 5
       action:
         debug:
-          msg: "{{ '$' * 500000 }}"
+          msg: "{{ '$' * 5000 }}"
